@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(21, 15, 44);
+  background-color: #0c0c0c;
 }
 
 /*--------Heading Styling--------*/
@@ -123,7 +123,7 @@ span {
 /*--------Stock max min Styling---------*/
 #stockMin,
 #stockMax {
-  background-color: #20174f;
+  background-color: #1c0d65;
   width: 400px;
   margin: 10px 0;
   padding: 7px;
