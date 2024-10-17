@@ -136,7 +136,7 @@ span {
 
 /*------Tooltip styling--------*/
 .apexcharts-tooltip {
-  width: 120px;
+  width: 130px;
 }
 .apexcharts-tooltip-text-y-label {
   font-size: 12px;
@@ -144,7 +144,7 @@ span {
 
 .apexcharts-tooltip-text-y-value {
   background: #f3f3f3;
-  font-size: 12px;
+  font-size: 11px;
 }
 .apexcharts-xaxistooltip-text {
   color: rgb(0, 0, 0);
