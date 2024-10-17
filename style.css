@@ -1,0 +1,264 @@
+body {
+  background-color: rgb(21, 15, 44);
+}
+
+/*--------Heading Styling--------*/
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  color: white;
+}
+
+/*--------waiting message--------*/
+#waiting {
+  color: white;
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/*--------Chart styling--------*/
+#chart-timeline {
+  width: 60vw;
+  height: 20vh;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.784);
+  padding: 6px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+#chartAndStock {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+span {
+  font-size: 20px;
+}
+
+/*--------stock List-------*/
+#stockList {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  color: white;
+}
+
+/*--------stock Details Styling-------*/
+.stockDetailsDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.stockDetailsDiv button {
+  background-color: rgb(43, 33, 183);
+  color: #fff;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.stockDetailsDiv button:hover {
+  background-color: rgb(74, 64, 214);
+}
+
+/*--------Stock info Styling-------*/
+.stockinfodiv {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 2px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+#Summary {
+  margin-left: 20px;
+}
+
+#stockSummary {
+  width: 85%;
+  font-size: 17px;
+  color: white;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*--------Toolbar and Toolbar button styling---------*/
+.toolbar {
+  display: flex;
+  justify-content: center;
+}
+
+.toolbar button {
+  background-color: rgb(18, 8, 89);
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 5px 10px;
+  color: #fff;
+}
+
+.toolbar button:hover {
+  background-color: rgb(40, 17, 214);
+}
+
+/*--------Stock max min Styling---------*/
+#stockMin,
+#stockMax {
+  background-color: #20174f;
+  width: 400px;
+  margin: 10px 0;
+  padding: 7px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/*------- For screen size 380px---------- */
+@media (max-width: 768px) {
+  .stockDetailsDiv button {
+    font-size: 12px;
+  }
+
+  .stockDetailsDiv span {
+    font-size: 14px;
+  }
+
+  #chart-timeline {
+    width: 65vw;
+    padding: 4px;
+  }
+
+  #stockMin,
+  #stockMax {
+    font-size: 14px;
+    width: 300px;
+  }
+
+  .toolbar button {
+    font-size: 12px;
+  }
+
+  #stockSummary {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+/*----------For screen size 480px------------------ */
+@media (max-width: 480px) {
+  .stockDetailsDiv span {
+    font-size: 12px;
+  }
+
+  .toolbar button {
+    font-size: 8px;
+    padding: 4px;
+    border-radius: 2px;
+  }
+
+  #stockMin,
+  #stockMax {
+    font-size: 10px;
+    width: 250px;
+  }
+
+  #chartAndStock {
+    gap: 8px;
+  }
+
+  #chart-timeline {
+    width: 65vw;
+    padding: 4px;
+  }
+
+  .stockDetailsDiv button {
+    font-size: 6px;
+    padding: 4px;
+    border-radius: 2px;
+  }
+
+  .stockinfodiv {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+  #stockSummary {
+    font-size: 8px;
+    width: 90%;
+  }
+
+  #stockName,
+  #profit,
+  #book_Value {
+    font-size: 14px;
+  }
+}
+
+/*----------For screen size 380px----------*/
+@media (max-width: 380px) {
+  #stockMin,
+  #stockMax {
+    font-size: 8px;
+    width: 200px;
+  }
+
+  .stockDetailsDiv span {
+    font-size: 8px;
+  }
+
+  .stockDetailsDiv button {
+    font-size: 5px;
+    padding: 4px;
+    border-radius: 1px;
+  }
+
+  .toolbar button {
+    font-size: 6px;
+    padding: 4px;
+    border-radius: 2px;
+  }
+
+  #chart-timeline {
+    width: 65vw;
+    padding: 2px;
+  }
+
+  header {
+    font-size: 20px;
+  }
+
+  .stockinfodiv {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+
+  #stockSummary {
+    font-size: 8px;
+    width: 90%;
+  }
+
+  #stockName,
+  #profit,
+  #book_Value {
+    font-size: 14px;
+  }
+}

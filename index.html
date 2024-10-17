@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market Analysis</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <header>Stock Market Analysis</header>
+    <div id="chart">
+      <div id="chartAndStock">
+        <div id="chartController">
+          <div id="chart-timeline"></div>
+          <div class="toolbar">
+            <button id="one_month">1 Month</button>
+            <button id="three_months">3 Months</button>
+            <button id="one_year" class="active">1 Year</button>
+            <button id="five_years" class="active">5 years</button>
+          </div>
+          <div id="stockMinMax">
+            <div id="stockMin"></div>
+            <div id="stockMax"></div>
+          </div>
+        </div>
+        <div id="stockList"></div>
+      </div>
+      <div id="stockDetails">
+        <div class="stockinfodiv">
+          <h2>Stock Name-</h2>
+          <span id="stockName"></span>
+        </div>
+        <div class="stockinfodiv">
+          <h2>Book Value -</h2>
+          <span id="book_Value"></span>
+        </div>
+        <div class="stockinfodiv">
+          <h2>Profit -</h2>
+          <span id="profit"></span>
+        </div>
+        <div>
+          <h2 id="Summary">Summary</h2>
+          <span id="stockSummary"></span>
+        </div>
+      </div>
+    </div>
+    <div id="waiting">Please wait while the page is loading....</div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
