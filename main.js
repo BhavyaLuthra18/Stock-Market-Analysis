@@ -57,7 +57,7 @@ async function render() {
     chart: {
       id: "area-datetime",
       type: "area",
-      height: 350,
+      height: 400,
       zoom: {
         autoScaleYaxis: true,
       },
@@ -70,9 +70,7 @@ async function render() {
       style: "hollow",
     },
     xaxis: {
-      // time base data
       type: "datetime",
-      // set the minimum value on the X-axis based on the first data point's timestamp
       min: createChart(
         stockChartsData,
         stockStatsData,
@@ -84,7 +82,7 @@ async function render() {
     },
     tooltip: {
       x: {
-        format: "dd MMM yyy",
+        format: "dd MMM yyyy",
       },
     },
     stroke: {
